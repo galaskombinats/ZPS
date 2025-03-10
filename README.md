@@ -1,0 +1,2 @@
+# ZPS
+Zāļu Pārvaldības Sistēma
