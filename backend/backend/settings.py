@@ -42,7 +42,14 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'rest_framework',  # Django REST Framework
+    'rest_framework_simplejwt' #JWT autentifikācija
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
